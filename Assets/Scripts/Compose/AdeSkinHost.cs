@@ -556,7 +556,7 @@ namespace Arcade.Compose
 			skinData.DifficultyEternal = LoadLabelled(Path.Combine(SkinFolderPath, "UI", "Difficulties", "Eternal.png"), (path) =>
 			{
 				return LoadNormalSprite(path, externalSkinDataObjects);
-			}, rawDefaultData.DifficultyBeyond);
+			}, rawDefaultData.DifficultyEternal);
 
 			skinData.Pause = LoadLabelled(Path.Combine(SkinFolderPath, "UI", "PlayPause", "Pause.png"), (path) =>
 			{
