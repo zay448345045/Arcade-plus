@@ -61,7 +61,7 @@ Shader "Arcade/Arc"
 			{
 			    if(i.uv.y < _From || i.uv.y > _To) return 0;
 				float4 c = tex2D(_MainTex,i.uv) ;
-				float4 inColor = lerp(_LowColor,_HighColor,clamp(i.uv2.x,0,1));
+				float4 inColor = lerp(_LowColor,_HighColor,clamp(abs(i.uv2.x),0,1));
 				c *= inColor;
 				c.rgb *= c.a;
 				return c;
