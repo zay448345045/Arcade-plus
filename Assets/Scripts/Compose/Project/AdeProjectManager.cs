@@ -541,7 +541,7 @@ namespace Arcade.Compose
 		public void OnDiffEdited()
 		{
 			if (CurrentProjectMetadata == null) return;
-			if (CurrentDifficulty < 0 || CurrentDifficulty > 3) return;
+			if (CurrentDifficulty < 0 || CurrentDifficulty > 4) return;
 			if (CurrentProjectMetadata.Difficulties[CurrentDifficulty] == null)
 			{
 				CurrentProjectMetadata.Difficulties[CurrentDifficulty] = new AdeChartDifficultyMetadata();
